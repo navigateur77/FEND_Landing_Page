@@ -1,0 +1,134 @@
+/***********************/
+/* SECTION BLOGS */
+/***********************/
+
+.section-blog {
+  padding: 4.6rem 0;
+}
+
+.service {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+
+.service-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.service-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--cloud {
+  background-color: #51cf66;
+}
+
+.tag--cyber {
+  background-color: #ffd43b;
+}
+
+.service-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.service-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-attribute {
+  display: flex;
+  font-size: 1.8rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.service-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.service-img {
+  width: 100%;
+}
+
+.service:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.all-services {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.link:link,
+.link:visited {
+  color: #94d82d;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #74b816;
+  border-bottom: 1px solid transparent;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/**************************/
+/* SECTION FOOTER */
+/************************/
+
+.footer {
+  padding: 6.4rem 0;
+  box-shadow: 0 0 0 0.4rem rgba(253, 242, 233, 0.5);
+  background-color: #f4fbea;
+}
+
+.container-footer {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: auto;
+  font-weight: 400;
+  color: #767676;
+}
+
+.footer-links {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.footer-link {
+  margin-right: 3.2rem;
+  font-size: 1.8rem;
+}

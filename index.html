@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="JS/script.js"></script>
+    <title>KaJo Tech Solution</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="KaJo Tech Solution logo" src="images/fanicon.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="homes active"><a class="main-nav-link" href="#homes">Home</a></li>
+          <li class="abouts"><a class="main-nav-link" href="#abouts">About Neb</a></li>
+          <li class="blog"><a class="main-nav-link" href="#blog">Blog</a</li>
+          <li class="sign"><a class="main-nav-link nav-cta" href="#sign">Sign Up</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <!--SECTION HOME-->
+      <section class="section-home" id ="homes">
+        <div class="home">
+          <div class="home-test-box">
+            <h1 class="heading-primary">All your Tech Solutions, at your finger tips</h1>
+            <p class="heading-description"><blockquote> The world is facing many chalenges. Cloud computing, Cybersecurity or Data science. We are taking care of your IT Solutions need so you can focus on how to grow your company.</blockquote></p>
+            <a href="#" class="btn btn--full margin-right-sm">Worry free</a>
+            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <div class="delivered-services">
+              <div class="delivered-img">
+                <img src="Images/customers/customer_1.jpg" alt="Customer photo" />
+                <img src="Images/customers/customer_2.jpg" alt="Customer photo" />
+                <img src="Images/customers/customer_3.jpg" alt="Customer photo" />
+                <img src="Images/customers/customer_4.jpg" alt="Customer photo" />
+                <img src="Images/customers/customer_5.jpg" alt="Customer photo" />
+                <img src="Images/customers/customer_6.jpg" alt="Customer photo" />
+              </div>
+              <p class="delivered-text"><em><span>10,000+</span> services delivered last four years!</em></p>
+            </div>
+          </div>
+          <div class="home-img-box">
+            <figure>
+              <img src="Images/carousel.jpg" class="home-img" alt="Services" />
+              <figcaption>Tech solution framework</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="abouts">
+        <!-- BEGIN COLLAPSE HTML-->
+        <details class="collapse-about">
+          <summary>
+            <h3 class="collapse">Section about</h3>
+            <ion-icon class="service-icon-a" name="arrow-down-outline"></ion-icon>
+          </summary>
+        <!--END COLLAPSE HTML-->
+        <div class="container">
+          <div class="middle-container">
+            <div class="profile">
+              <img src="../Images/about/njc_c.png" alt="Profile-img" />
+              <h2 class="heading-secondary" id="greet">Greetings!</h2>
+            </div>
+              <p class="heading-description">Detailed oriented and analytical individual with 10+ years of experience in using, developing and maintaining data management, digital security systems technology. Excel in teamwork and customer service management.</p>
+            <hr />
+            <div class="skills">
+              <h2 class="heading-secondary">My Skills.</h2>
+              <div class="skill-row">
+                <img class="skill-img" src="../Images/about/skill.png" alt="Skill-img" />
+                <h3 class="heading-tertiary">Model Builder</h3>
+                <p class="heading-description">As a certified Anaplan Model Builder I could solve today business problem for business management.</p>
+              </div>
+              <div class="skill-row">
+                <img class="skill1-img" src="../Images/about/skill1.png" alt="Skill-img" />
+                <h3 class="heading-tertiary">Web Design</h3>
+                <p class="heading-description">Web designing has been always a passion for me. This is a long journey to master.</p>
+              </div>
+            </div>
+          </div>
+          <hr class="hr-last">
+      </section>
+      <!--SECTION BLOG WHERE THE COLLAPSE BEGIN-->
+      <section class="section-blog" id="blog"> 
+        <details class="collapse-blog">
+          <summary>
+            <h3 class="collapse">Section blog</h3>
+            <ion-icon class="service-icon-a" name="arrow-down-outline"></ion-icon>
+          </summary>
+        <div class="container center-text">
+          <h3 class="heading-tertiary"><u>Cloud Computing Services</u></h3>
+          <p class="heading-description"> computing is providing developers and IT departments with the ability to focus on what matters most and avoid undifferentiated work like procurement, maintenance, and capacity planning. As cloud computing has grown in popularity, several different models and deployment strategies have emerged to help meet specific needs of different users. Each type of cloud service, and deployment method, provides you with different levels of control, flexibility, and management. <em>Understanding the differences between Infrastructure as a Service, Platform as a Service, and Software as a Service, as well as what deployment strategies</em> you can use, can help you decide what set of services is right for your needs.</p>
+        </div>
+        <div class="container grid grid--3--cols margin-bottom-md">
+          <div class="service">
+            <img src="Images/Card/Cloud/aws_1.png" alt="AWS Logo" class="service-img" />
+            <div class="service-content">
+              <div class="service-tags">
+                <span class="tag tag--cloud">AWS</span>
+              </div>
+              <p class="service-title">Amazon Web Service</p>
+              <ul class="service-attributes">
+                <li class="service-attribute">
+                  <ion-icon class="service-icon" name="location-outline"></ion-icon>
+                  <span><strong>30</strong> Regions</span>
+                </li>
+                <li class="service-attribute">
+                  <ion-icon class="service-icon" name="server-outline"></ion-icon>
+                  <span> <strong>96</strong> Availability Zones</span>
+                </li>
+                <li class="service-attribute">
+                  <ion-icon class="service-icon" name="analytics-outline"></ion-icon>
+                  <span><strong>410+</strong> Points of presence</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="service">
+            <img src="Images/Card/Cloud/azure_1.png" alt="AZURE Logo" class="service-img" />
+            <div class="service-content">
+              <div class="service-tags">
+                <span class="tag tag--cloud">AZURE</span>
+              </div>
+              <p class="service-title">Azure Cloud</p>
+              <ul class="service-attributes">
+                <li class="service-attribute">
+                  <ion-icon class="service-icon" name="location-outline"></ion-icon>
+                  <span><strong>59</strong> Regions</span>
+                </li>
+                <li class="service-attribute">
+                  <ion-icon class="service-icon" name="server-outline"></ion-icon>
+                  <span> <strong>113</strong> Availability Zones</span>
+                </li>
+                <li class="service-attribute">
+                  <ion-icon class="service-icon" name="analytics-outline"></ion-icon>
+                  <span><strong>113+</strong> Availability Set</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="service service-last">
+            <img src="Images/Card/Cloud/gcp_1.png" alt="GOOGLE Logo" class="service-img" />
+            <div class="service-content">
+              <div class="service-tags">
+                <span class="tag tag--cloud">GOOGLE</span>
+              </div>
+              <p class="service-title">Google Cloud</p>
+              <ul class="service-attributes">
+                <li class="service-attribute">
+                  <ion-icon class="service-icon" name="location-outline"></ion-icon>
+                  <span><strong>34</strong> Regions</span>
+                </li>
+                <li class="service-attribute">
+                  <ion-icon class="service-icon" name="server-outline"></ion-icon>
+                  <span> <strong>103</strong> Availability Zones</span>
+                </li>
+                <li class="service-attribute">
+                  <ion-icon class="service-icon" name="analytics-outline"></ion-icon>
+                  <span>More Service</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container all-services">
+          <a href="#" class="link">All cloud posts &rarr;</a>
+        </div>
+      <div class="container center-text">
+        <h3 class="heading-tertiary bottom"><u>Cybersecurity Services</u></h3>
+        <p class="heading-description">Cyber security can be described as the collective methods, technologies, and processes to help protect the confidentiality, integrity, and availability of computer systems, networks and data, against cyber-attacks or unauthorized access. The main purpose of cyber security is <em>to protect all organizational assets from both external and internal threats</em> as well as disruptions caused due to natural disasters.</p>
+      </div>
+      <div class="container grid grid--3--cols margin-bottom-md">
+        <div class="service">
+          <img src="Images/Card/Cyber/cve_1.png" alt="CVE Logo" class="service-img" />
+          <div class="service-content">
+            <div class="service-tags">
+              <span class="tag tag--cyber">CVE</span>
+            </div>
+            <p class="service-title">Common Vulnerabilities and Exposures</p>
+            <ul class="service-attributes">
+              <li class="service-attribute">
+                <ion-icon class="service-icon" name="checkmark-outline"></ion-icon>
+                <span><strong>1000+</strong> CVE identifiers</span>
+              </li>
+              <li class="service-attribute">
+                <ion-icon class="service-icon" name="checkmark-outline"></ion-icon>
+                <span> <strong>Scoring</strong> CVSS</span>
+              </li>
+              <li class="service-attribute">
+                <ion-icon class="service-icon" name="checkmark-outline"></ion-icon>
+                <span><strong>100+</strong> IT vendors</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="service">
+          <img src="Images/Card/Cyber/tls_1.png" alt="SSL/TLS Logo" class="service-img" />
+          <div class="service-content">
+            <div class="service-tags">
+              <span class="tag tag--cyber">Socket</span>
+            </div>
+            <p class="service-title">SSL/TLS</p>
+            <ul class="service-attributes">
+              <li class="service-attribute">
+                <ion-icon class="service-icon" name="checkmark-outline"></ion-icon>
+                <span> Keep connection secure </span>
+              </li>
+              <li class="service-attribute">
+                <ion-icon class="service-icon" name="checkmark-outline"></ion-icon>
+                <span> Security certificates</span>
+              </li>
+              <li class="service-attribute">
+                <ion-icon class="service-icon" name="checkmark-outline"></ion-icon>
+                <span>HTTPS</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="service service-last">
+          <img src="Images/Card/Cyber/vpn_1.png" alt="GOOGLE Logo" class="service-img" />
+          <div class="service-content">
+            <div class="service-tags">
+              <span class="tag tag--cyber">VPN</span>
+            </div>
+            <p class="service-title">Virtual Private Network</p>
+            <ul class="service-attributes">
+              <li class="service-attribute">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <span>Disguising your whereabouts</span>
+              </li>
+              <li class="service-attribute">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <span> Access to regional content</span>
+              </li>
+              <li class="service-attribute">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                <span>Secure data transfer</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container all-services">
+        <a href="#" class="link">All cybersecurity posts &rarr;</a>
+      </div>
+      </details>
+      </section>
+      <!--SECTION SIGN UP-->
+      <section class="section-contact" id="sign">
+        <details class="collapse-sign">
+          <summary>
+            <h3 class="collapse">Section Sign up</h3>
+            <ion-icon class="service-icon-a" name="arrow-down-outline"></ion-icon>
+          </summary>
+        <div class="hero-test-box">
+          <h1 class="heading-primary">Sign up for more!</h1>
+        </div>
+        <div class="container">
+          <div class="contact">
+            <div class="contact-text-box">
+              <h2 class="heading-secondary">Get In Touch</h2>
+              <p class="contact-text">It is always great to keep in touch with people and try to learn from them. I will be happy to heard from you so ping me a message. Thank you.</p>
+              <form action="#" class="contact-form">
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input id="full-name" type="text" placeholder="Your name" required />
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input id="email" type="email" placeholder="me@example.com" required />
+                </div>
+                <div>
+                  <label for="select-where">Where did you hear from us</label>
+                  <select name="" id="select-where" required>
+                    <option value="">Please choose one option</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="Youtube">Youtube videos</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ads">Facebook ads</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+                <button class="btn btn--form">Sign up now</button>
+              </form>
+            </div>
+            <div class="contact-img-box" role="img" aria-label="KaJo Tech Solution logo"></div>
+          </div>
+        </div>
+      </section>
+      <button class="btn-scroll">☝️</button> <!--BUTTON SCROLL TO TOP-->
+      <footer class="footer">
+        <div class="container-footer">
+          <div class="footer-links">
+            <a class="footer-link" href="https://www.linkedin.com/in/nebnoma-j-compaore/"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a class="footer-link" href="https://twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a class="footer-link" href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+          </div>
+          <p class="copyright">Copyright &copy; 2022 by <strong>KaJo Tech Solution</strong>, Inc. All right reserved.</p>
+        </div>
+      </footer>
+  </body>
+</html>
