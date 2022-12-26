@@ -1,13 +1,4 @@
 /*******************************/
-/*IMPORTS SECTION */
-/******************************/
-
-/* @import "nav.css"; */
-/* @import "home.css"; */
-/* @import "about.css"; */
-/* @import "signup.css"; */
-
-/*******************************/
 /*GENERAL SECTION */
 /******************************/
 
@@ -342,7 +333,6 @@ hr {
   border: dotted #e9fac8 6px;
   border-bottom: none;
   margin: 100px auto;
-  /* text-align: center; */
 }
 
 .line {
@@ -589,7 +579,7 @@ summary::-webkit-details-marker {
 .contact {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  background-color: #f4fbea; /* #e67e22; */
+  background-color: #f4fbea;
   box-shadow: 0 2.4rem 4.8rem rbga(0, 0, 0, 0.15);
   border-radius: 11px;
 
