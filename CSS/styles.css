@@ -2,11 +2,10 @@
 /*IMPORTS SECTION */
 /******************************/
 
-@import url("/CSS/nav.css");
-@import url("/CSS/home.css");
-
-@import url("/CSS/about.css");
-@import url("/CSS/signup.css");
+@import "nav.css";
+@import "home.css";
+@import "about.css";
+@import "signup.css";
 
 /*******************************/
 /*GENERAL SECTION */
