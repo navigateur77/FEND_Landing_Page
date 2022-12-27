@@ -1,5 +1,4 @@
 /* NAVIGATION MOBILE */
-
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
 btnNavEl.addEventListener("click", function () {
@@ -24,7 +23,9 @@ allLinks.forEach(function (link) {
     // Scrooll to other link
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
-      sectionEl.scrollIntoView({ behavior: "smooth" });
+      sectionEl.scrollIntoView({
+        behavior: "smooth",
+      });
     }
 
     // Close mobile navigation
@@ -44,9 +45,7 @@ const observ = new IntersectionObserver(
 
     if (!int.isIntersecting) {
       document.body.classList.add("fixed");
-    }
-
-    if (int.isIntersecting) {
+    } else {
       document.body.classList.remove("fixed");
     }
   },
@@ -104,10 +103,10 @@ window.addEventListener(
 
 //  ADD A SCROLL BUTTON TO THE TOP OF THE PAGE
 
-let footerEl = document.querySelector("footer");
+const footerEl = document.querySelector("footer");
 
-var btnEl = document.querySelector(".btn-scroll");
-var rootEl = document.documentElement;
+const btnEl = document.querySelector(".btn-scroll");
+const rootEl = document.documentElement;
 
 // Helper function to watch the intersection of the footer to show the button
 
