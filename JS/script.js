@@ -1,25 +1,49 @@
+// DYNAMIC NAVIGATION BAR MENU
+
+const nav = document.querySelector(".main-nav");
+
+const navlist = ["Home", "About", "Blog", "Sign"];
+const ulEl = document.createElement("ul");
+ulEl.classList.add("main-nav-list");
+
+for (let i = 0; i <= navlist.length - 1; i++) {
+  const listEl = navlist[i].toLowerCase();
+  const liEl = document.createElement("li");
+  if (listEl === "home") {
+    liEl.classList.add(listEl + "s", "active");
+  }
+  liEl.classList.add(listEl + "s");
+
+  const aEl = document.createElement("a");
+  aEl.classList.add("main-nav-link");
+  aEl.setAttribute("href", "#" + listEl + "s");
+  const textList = document.createTextNode(listEl);
+  aEl.appendChild(textList);
+  liEl.appendChild(aEl);
+  ulEl.appendChild(liEl);
+}
+nav.appendChild(ulEl);
+
 /* NAVIGATION MOBILE */
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
-btnNavEl.addEventListener("click", function () {
+btnNavEl.addEventListener("click", () => {
   headerEl.classList.toggle("nav-open");
 });
 
 /* SMOOTH SCROLLING */
 
 const allLinks = document.querySelectorAll("a:link");
-allLinks.forEach(function (link) {
-  link.addEventListener("click", function (e) {
+allLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
     const href = link.getAttribute("href");
-
     //Scrooll back to top
     if (href === "#")
       window.scrollTo({
         top: 0,
         behavior: "smooth",
       });
-
     // Scrooll to other link
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
@@ -27,7 +51,6 @@ allLinks.forEach(function (link) {
         behavior: "smooth",
       });
     }
-
     // Close mobile navigation
     if (link.classList.contains("main-nav-link")) {
       headerEl.classList.toggle("nav-open");
@@ -39,7 +62,7 @@ allLinks.forEach(function (link) {
 
 const sectionHomeEl = document.querySelector(".section-home");
 const observ = new IntersectionObserver(
-  function (entries) {
+  (entries) => {
     const int = entries[0];
     console.log(int);
 
@@ -63,10 +86,10 @@ const sectionEl = document.querySelectorAll("section");
 
 const navListEl = document.querySelectorAll(".header ul li");
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
   let position = "";
 
-  sectionEl.forEach(function (section) {
+  sectionEl.forEach((section) => {
     const topS = section.offsetTop;
     const heightS = section.clientHeight;
     if (scrollY >= topS - heightS / 3) {
@@ -74,7 +97,7 @@ window.addEventListener("scroll", function () {
     }
   });
 
-  navListEl.forEach(function (li) {
+  navListEl.forEach((li) => {
     li.classList.remove("active");
     if (li.classList.contains(position)) {
       li.classList.add("active");
@@ -86,13 +109,13 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener(
   "scroll",
-  function (event) {
+  (event) => {
     let isScrolling;
     // Clear our timeout throughout the scroll
     window.clearTimeout(isScrolling);
 
     // Set a timeout to run after scrolling ends
-    isScrolling = setTimeout(function () {
+    isScrolling = setTimeout(() => {
       // Run the callback
       document.body.classList.add("fixed");
     }, 300);
@@ -111,7 +134,7 @@ const rootEl = document.documentElement;
 // Helper function to watch the intersection of the footer to show the button
 
 function intersect(entries, observer) {
-  entries.forEach(function (entry) {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       btnEl.classList.add("showBtn");
     } else {
